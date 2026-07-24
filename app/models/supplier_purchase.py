@@ -17,6 +17,12 @@ class SupplierCreate(BaseModel):
     phone: str = ""
     address: str = ""
 
+class SupplierUpdate(BaseModel):
+    name: Optional[str] = None
+    gstin: Optional[str] = None
+    phone: Optional[str] = None
+    address: Optional[str] = None
+
 class PurchaseLine(BaseModel):
     item_id: Optional[str] = None
     name: str
